@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Alnick Clores</title>
+  </head>
+  <body>
+    <nav
+      class="flex justify-between items-center max-w-[1240px] mx-auto h-20 px-8 bg-slate-800 text-white md:max-w-full"
+    >
+      <div>
+        <a class="text-2xl cursor-pointer uppercase md:text-xl">Alnick</a>
+      </div>
+
+      <!-- root nav - mobile nav -->
+      <ul
+        class="flex flex-col items-center justify-center fixed left-0 top-0 h-screen w-full uppercase mt-20 bg-slate-800 transition-opacity ease-in-out duration-1000 hidden md:hidden"
+        id="mobileMenu"
+      >
+        <li class="text-2xl font-semibold my-5 hover:text-blue-200">
+          <a href="index.html">Home</a>
+        </li>
+        <li class="text-2xl font-semibold my-5 hover:text-blue-200">
+          <a href="#">About</a>
+        </li>
+        <li class="text-2xl font-semibold my-5 hover:text-blue-200">
+          <a href="#">Projects</a>
+        </li>
+        <li class="text-2xl font-semibold my-5 hover:text-blue-200">
+          <a href="#">Contacts</a>
+        </li>
+      </ul>
+      <div class="md:hidden block" id="toggleButton">
+        <i class="fa-solid fa-bars text-2xl"></i>
+        <i class="fa-solid fa-x hidden text-2xl"></i>
+      </div>
+
+      <!-- desktop nav -->
+      <ul class="hidden md:flex md:uppercase">
+        <li class="text-l m-4 hover:text-blue-200">
+          <a href="index.html">Home</a>
+        </li>
+        <li class="text-l m-4 hover:text-blue-200"><a href="#">About</a></li>
+        <li class="text-l m-4 hover:text-blue-200"><a href="#">Projects</a></li>
+        <li class="text-l m-4 hover:text-blue-200"><a href="#">Contacts</a></li>
+      </ul>
+    </nav>
+
+    <script src="script.js"></script>
+  </body>
+</html>
